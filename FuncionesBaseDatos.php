@@ -102,7 +102,7 @@ function crearTablas($basedatos){
     
     // Pasamos la variable $strInsert para ejecurar el query
     //print_r ("Estoy aqui1");
-    if ($conexion->query($libros2) === true) { //ejecutando query para la creaci�n de una tabla en MySQL
+    if ($conexion->query($libros2) === true) { //ejecutando query para la creación de una tabla en MySQL
         
         echo "Tabla libros creada en MYSQL";
         echo "<br>";
@@ -121,7 +121,7 @@ function crearTablas($basedatos){
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
     ";
     
-    if ($conexion->query($logins2) === true) { //ejecutando query para la creaci�n de una tabla en MySQL
+    if ($conexion->query($logins2) === true) { //ejecutando query para la creación de una tabla en MySQL
         
         echo "Tabla logins creada en MYSQL";
         echo "<br>";
@@ -249,7 +249,7 @@ function getLibros()
 function getLibrosTitulo()
 {
     /*La tabla libros compuesta por los campos:
-     * titulo, ciudad, conferencia y divisi�n
+     * titulo, ciudad, conferencia y división
      * */
     $mysqli = getConexionMySQLi();
     $consulta = "select titulo from libros";
@@ -315,8 +315,8 @@ function borrarLibroMySQLi($numeroEjemplar)
     $conexion = getConexionMySQLi();
     $precio = 0;
     
-    $todo_bien = true;            // Definimos una variable para comprobar la ejecución
-    $conexion->autocommit(false); // Deshabilitamos el modo transaccional automático
+    $todo_bien = true;            // Definimos una variable para comprobar la ejecuciÃ³n
+    $conexion->autocommit(false); // Deshabilitamos el modo transaccional automÃ¡tico
     
     
     $consulta = "select precio from libros WHERE numero_ejemplar = $numeroEjemplar";
@@ -409,8 +409,8 @@ function modificarLibroMySQLi($numero_ejemplar,$precio)
 
 function getLibrosPrecio($libro)
 {
-    /*La tabla jugadores, est� compuesta po los campos:
-     * codigo, titulo, procedencia, altura, peso, posici�n, titulo_equipo
+    /*La tabla jugadores, está compuesta po los campos:
+     * codigo, titulo, procedencia, altura, peso, posición, titulo_equipo
      * */
     $mysqli = getConexionMySQLi();
     $consulta = "select numero_ejemplar, titulo, precio from libros where titulo = '$libro'";
