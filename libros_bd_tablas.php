@@ -24,7 +24,7 @@
 	   ini_set("display_errors",true);
 	   include_once 'funcionesBaseDatos.php';
 	   
-	   $basedatos="libros2";
+	   $basedatos=DATABASE;
 	   $bbdd=crearBBDD($basedatos);
 	   
 	   if($bbdd ==0){
