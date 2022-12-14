@@ -1,9 +1,6 @@
 <?php
 
-define("HOST", "localhost");
-define("USERNAME", "root");
-define("PASSWORD", "");
-define("DATABASE", "libros2");
+include_once 'constantes.php';
 
 function getConexionPDO()
 {
