@@ -1,5 +1,5 @@
 <?php
-include_once 'FuncionesBaseDatos.php';
+include_once 'funcionesBaseDatos.php';
 
 // Comprobamos si ya se ha enviado el formulario
 if (isset($_POST['login'])) {
@@ -9,7 +9,7 @@ if (isset($_POST['login'])) {
         $error = "Debes introducir un nombre de usuario y una contraseña";
     else 
     {
-        include_once 'FuncionesBaseDatos.php';
+        include_once 'funcionesBaseDatos.php';
         // Comprobamos las credenciales con la base de datos
         if(usuarioCorrecto($usuario, $password))
         {
