@@ -1,5 +1,5 @@
 <?php
-include_once 'FuncionesBaseDatos.php';
+include_once 'funcionesBaseDatos.php';
 
 // Comprobamos si tenemos que reservar
 if (isset($_POST['registrar']))
