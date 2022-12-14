@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Creación de tablas</title>
+        <title>CreaciÃ³n de tablas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -22,7 +22,7 @@
        
 	   <?php 
 	   ini_set("display_errors",true);
-	   include_once 'FuncionesBaseDatos.php';
+	   include_once 'funcionesBaseDatos.php';
 	   
 	   $basedatos="libros2";
 	   $bbdd=crearBBDD($basedatos);
